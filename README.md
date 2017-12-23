@@ -37,7 +37,7 @@ mkdir <project_dir> && cd <project_dir>
 virtualenv -p python3 .
 source bin/activate
 git init
-git clone https://github.com/h4stoor/python-skygate-task.git src
+git clone https://github.com/h4stoor/skygate-task-warehouse-api.git src
 cd src
 pip install -r requirements.txt
 python manage.py makemigrations
@@ -51,28 +51,28 @@ python manage.py test
 **GET** - Root.
 
 ### `/product/`
-**GET** - List of all products.
+**GET** - List of all products.<br>
 **POST** - Add product.
 #### `/{id}`
-**GET** - Info about product.
-**PATCH** - Update product.
+**GET** - Info about product.<br>
+**PATCH** - Update product.<br>
 **DELETE** - Delete product.
 
 ### `/shelf/`
-**GET** - List of all shelfs.
+**GET** - List of all shelfs.<br>
 **POST** - Create shelf.
 #### `/prepare/` - TASK SOLVER.
 #### `/{id}`
-**GET** - Info about shelf.
-**PATCH** - Update shelf.
+**GET** - Info about shelf.<br>
+**PATCH** - Update shelf.<br>
 **DELETE** - Delete shelf.
 
 ### `/transport/`
-**GET** - List of all transports.
+**GET** - List of all transports.<br>
 **POST** - Create transport.
 #### `/{id}`
-**GET** - Info about transport.
-**PATCH** - Update transport.
+**GET** - Info about transport.<br>
+**PATCH** - Update transport.<br>
 **DELETE** - Delete transport.
 
 
@@ -184,40 +184,40 @@ List of all shelfs.
 ```json
 [
     {
-        'box1': {
-            'id': 1,
-            'product': 'product1',
-            'quantity': 8
+        "box1": {
+            "id": 1,
+            "product": "product1",
+            "quantity": 8
         },
-        'box2': {
-            'id': 2,
-            'product': 'product2',
-            'quantity': 2
+        "box2": {
+            "id": 2,
+            "product": "product2",
+            "quantity": 2
         },
-        'box3': {
-            'id': 3,
-            'product': 'EMPTY',
-            'quantity': 0
+        "box3": {
+            "id": 3,
+            "product": "EMPTY",
+            "quantity": 0
         },
-        'id': 1
+        "id": 1
     },
     {
-        'box1': {
-            'id': 4,
-            'product': 'product2',
-            'quantity': 3
+        "box1": {
+            "id": 4,
+            "product": "product2",
+            "quantity": 3
         },
-        'box2': {
-            'id': 5,
-            'product': 'product3',
-            'quantity': 4
+        "box2": {
+            "id": 5,
+            "product": "product3",
+            "quantity": 4
         },
-        'box3': {
-            'id': 6,
-            'product': 'product1',
-            'quantity': 3
+        "box3": {
+            "id": 6,
+            "product": "product1",
+            "quantity": 3
         },
-        'id': 2},
+        "id": 2},
 ]
 ```
 
@@ -264,58 +264,58 @@ TASK SOLVER
 ```json
 [
     {
-        'box1': {
-            'id': 1,
-            'product': 'product1',
-            'quantity': 8
+        "box1": {
+            "id": 1,
+            "product": "product1",
+            "quantity": 8
         },
-        'box2': {
-            'id': 2,
-            'product': 'product2',
-            'quantity': 2
+        "box2": {
+            "id": 2,
+            "product": "product2",
+            "quantity": 2
         },
-        'box3': {
-            'id': 3,
-            'product': 'EMPTY',
-            'quantity': 0
+        "box3": {
+            "id": 3,
+            "product": "EMPTY",
+            "quantity": 0
         },
-        'id': 1
+        "id": 1
     },
     {
-        'box1': {
-            'id': 4,
-            'product': 'product2',
-            'quantity': 3
+        "box1": {
+            "id": 4,
+            "product": "product2",
+            "quantity": 3
         },
-        'box2': {
-            'id': 5,
-            'product': 'product3',
-            'quantity': 4
+        "box2": {
+            "id": 5,
+            "product": "product3",
+            "quantity": 4
         },
-        'box3': {
-            'id': 6,
-            'product': 'product5',
-            'quantity': 3
+        "box3": {
+            "id": 6,
+            "product": "product5",
+            "quantity": 3
         },
-        'id': 2
+        "id": 2
     },
     {
-        'box1': {
-            'id': 7,
-            'product': 'product4',
-            'quantity': 8
+        "box1": {
+            "id": 7,
+            "product": "product4",
+            "quantity": 8
         },
-        'box2': {
-            'id': 8,
-            'product': 'product7',
-            'quantity': 2
+        "box2": {
+            "id": 8,
+            "product": "product7",
+            "quantity": 2
         },
-        'box3': {
-            'id': 9,
-            'product': 'EMPTY',
-            'quantity': 0
+        "box3": {
+            "id": 9,
+            "product": "EMPTY",
+            "quantity": 0
         },
-        'id': 3
+        "id": 3
     },
 ...
 ]
