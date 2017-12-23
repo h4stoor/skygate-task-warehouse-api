@@ -106,7 +106,7 @@ List of all products.
 
 **POST**
 
-Add an product.
+Add product.
 
 ```json
 {
@@ -131,11 +131,11 @@ Add an product.
 
 **GET**
 
-Info about an product.
+Info about a product.
 
 ```json
 {
-    "id": 2
+    "id": 2,
     "name": "product2",
     "quantity": 21
 }
@@ -143,7 +143,7 @@ Info about an product.
 
 **PATCH**
 
-Update an product.
+Update product.
 
 ```json
 {
@@ -166,7 +166,7 @@ Update an product.
 
 **DELETE**
 
-Delete an product.
+Delete product.
 
 ```json
 {
@@ -223,7 +223,7 @@ List of all shelfs.
 
 **POST**
 
-Create a shelve
+Create shelve
 
 ```json
 {}
@@ -388,7 +388,7 @@ Update shelve.
 
 **DELETE**
 
-Delete a shelve.
+Delete shelve.
 
 ```json
 {
@@ -428,7 +428,7 @@ List of all transports.
 
 **POST**
 
-Create a transport.
+Create transport.
 
 ```json
 {
